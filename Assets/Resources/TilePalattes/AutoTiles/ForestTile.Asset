@@ -52,6 +52,6 @@ MonoBehaviour:
   - {fileID: 3645899631828911853, guid: 33e6694bcd1d2eb44bba1ac9fe40a929, type: 3}
   - {fileID: 1659737983544098960, guid: 33e6694bcd1d2eb44bba1ac9fe40a929, type: 3}
   - {fileID: 7442340451889654382, guid: 33e6694bcd1d2eb44bba1ac9fe40a929, type: 3}
-  tileChange: 0
+  tileChange: 1
   terrainId: Forest
   terrainBonus: 2

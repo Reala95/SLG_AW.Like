@@ -38,7 +38,8 @@ public class TerrainTile : UnityEngine.Tilemaps.Tile
         i += isSameTile(tilemap, position + new Vector3Int(0, -1, 0)) ? 2 : 0;
         i += isSameTile(tilemap, position + new Vector3Int(-1, 0, 0)) ? 4 : 0;
         i += isSameTile(tilemap, position + new Vector3Int(1, 0, 0)) ? 8 : 0;
-        if(i < spritesSheet.Length) tileData.sprite = spritesSheet[i]; 
+        if (i < spritesSheet.Length && tileChange) tileData.sprite = spritesSheet[i];
+        else tileData.sprite = this.sprite;
     }
 
     private bool isSameTile(ITilemap tilemap, Vector3Int position)
