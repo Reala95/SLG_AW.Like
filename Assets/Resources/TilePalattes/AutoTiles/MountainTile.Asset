@@ -53,5 +53,7 @@ MonoBehaviour:
   - {fileID: -7343915359591493825, guid: dfaafb177543ab146b658d9e0eac9fc3, type: 3}
   - {fileID: 186424195669806847, guid: dfaafb177543ab146b658d9e0eac9fc3, type: 3}
   tileChange: 1
+  similarTile:
+  - Mountain
   terrainId: Mountain
   terrainBonus: 4

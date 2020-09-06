@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.Tilemaps;
@@ -8,7 +9,7 @@ public class TerrainTile : UnityEngine.Tilemaps.Tile
 {
     public Sprite[] spritesSheet;
     public bool tileChange = false;
-    
+    public string[] similarTile;
 
     public override void RefreshTile(Vector3Int position, ITilemap tilemap)
     {
@@ -44,7 +45,10 @@ public class TerrainTile : UnityEngine.Tilemaps.Tile
 
     private bool isSameTile(ITilemap tilemap, Vector3Int position)
     {
-        return tilemap.GetTile(position) == this;
+        if (tilemap.GetTile<TerrainTile>(position) != null)
+            //return tilemap.GetTile<TerrainTile>(position).getTerrainId() == this.terrainId;
+            return similarTile.Contains(tilemap.GetTile<TerrainTile>(position).getTerrainId());
+        else return false;
     }
 
     // Terrain data used in game play

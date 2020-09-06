@@ -53,5 +53,8 @@ MonoBehaviour:
   - {fileID: 3801191094593140313, guid: 988d5a751ea84314697dd32138da3471, type: 3}
   - {fileID: -8612619653329108629, guid: 988d5a751ea84314697dd32138da3471, type: 3}
   tileChange: 1
+  similarTile:
+  - Road
+  - Bridge
   terrainId: Road
   terrainBonus: 0
