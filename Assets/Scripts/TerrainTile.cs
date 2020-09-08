@@ -8,7 +8,16 @@ using UnityEngine.Tilemaps;
 public class TerrainTile : UnityEngine.Tilemaps.Tile
 {
     public Sprite[] spritesSheet;
-    public bool tileChange = false;
+    public bool checkDiagonalTiles;
+    public Sprite[] spritesDiagonalInCase5;
+    public Sprite[] spritesDiagonalInCase6;
+    public Sprite[] spritesDiagonalInCase7;
+    public Sprite[] spritesDiagonalInCase9;
+    public Sprite[] spritesDiagonalInCase10;
+    public Sprite[] spritesDiagonalInCase11;
+    public Sprite[] spritesDiagonalInCase13;
+    public Sprite[] spritesDiagonalInCase14;
+    public Sprite[] spritesDiagonalInCase15;
     public string[] similarTile;
 
     public override void RefreshTile(Vector3Int position, ITilemap tilemap)
@@ -39,8 +48,8 @@ public class TerrainTile : UnityEngine.Tilemaps.Tile
         i += isSameTile(tilemap, position + new Vector3Int(0, -1, 0)) ? 2 : 0;
         i += isSameTile(tilemap, position + new Vector3Int(-1, 0, 0)) ? 4 : 0;
         i += isSameTile(tilemap, position + new Vector3Int(1, 0, 0)) ? 8 : 0;
-        if (i < spritesSheet.Length && tileChange) tileData.sprite = spritesSheet[i];
-        else tileData.sprite = this.sprite;
+        if (checkDiagonalTiles) secondTileChange(position, tilemap, ref tileData, i);
+        else tileData.sprite = spritesSheet[Mathf.Min(spritesSheet.Length - 1, i)];
     }
 
     private bool isSameTile(ITilemap tilemap, Vector3Int position)
@@ -49,6 +58,60 @@ public class TerrainTile : UnityEngine.Tilemaps.Tile
             //return tilemap.GetTile<TerrainTile>(position).getTerrainId() == this.terrainId;
             return similarTile.Contains(tilemap.GetTile<TerrainTile>(position).getTerrainId());
         else return false;
+    }
+
+    private void secondTileChange(Vector3Int position, ITilemap tilemap, ref TileData tileData, int i)
+    {
+        int j = 0;
+        switch (i)
+        {
+            case 5:
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, 1, 0)) ? 1 : 0;
+                tileData.sprite = spritesDiagonalInCase5[j];
+                break;
+            case 6:
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, -1, 0)) ? 1 : 0;
+                tileData.sprite = spritesDiagonalInCase6[j];
+                break;
+            case 7:
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, -1, 0)) ? 1 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, 1, 0)) ? 2 : 0;
+                tileData.sprite = spritesDiagonalInCase7[j];
+                break;
+            case 9:
+                j += !isSameTile(tilemap, position + new Vector3Int(1, 1, 0)) ? 1 : 0;
+                tileData.sprite = spritesDiagonalInCase9[j];
+                break;
+            case 10:
+                j += !isSameTile(tilemap, position + new Vector3Int(1, -1, 0)) ? 1 : 0;
+                tileData.sprite = spritesDiagonalInCase10[j];
+                break;
+            case 11:
+                j += !isSameTile(tilemap, position + new Vector3Int(1, -1, 0)) ? 1 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(1, 1, 0)) ? 2 : 0;
+                tileData.sprite = spritesDiagonalInCase11[j];
+                break;
+            case 13:
+                j += !isSameTile(tilemap, position + new Vector3Int(1, 1, 0)) ? 1 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, 1, 0)) ? 2 : 0;
+                tileData.sprite = spritesDiagonalInCase13[j];
+                break;
+            case 14:
+                j += !isSameTile(tilemap, position + new Vector3Int(1, -1, 0)) ? 1 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, -1, 0)) ? 2 : 0;
+                tileData.sprite = spritesDiagonalInCase14[j];
+                break;
+            case 15:
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, 1, 0)) ? 1 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(1, 1, 0)) ? 2 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(-1, -1, 0)) ? 4 : 0;
+                j += !isSameTile(tilemap, position + new Vector3Int(1, -1, 0)) ? 8 : 0;
+                tileData.sprite = spritesDiagonalInCase15[j];
+                break;
+            default:
+                tileData.sprite = spritesSheet[Mathf.Min(spritesSheet.Length - 1, i)];
+                break;
+        }
     }
 
     // Terrain data used in game play

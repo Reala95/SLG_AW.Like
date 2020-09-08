@@ -51,9 +51,19 @@ MonoBehaviour:
   - {fileID: 7252291218959446625, guid: a54beb844ec116d47a5c855488818733, type: 3}
   - {fileID: -3600285873115429687, guid: a54beb844ec116d47a5c855488818733, type: 3}
   - {fileID: -158277958849923506, guid: a54beb844ec116d47a5c855488818733, type: 3}
-  tileChange: 1
+  checkDiagonalTiles: 0
+  spritesDiagonalInCase5: []
+  spritesDiagonalInCase6: []
+  spritesDiagonalInCase7: []
+  spritesDiagonalInCase9: []
+  spritesDiagonalInCase10: []
+  spritesDiagonalInCase11: []
+  spritesDiagonalInCase13: []
+  spritesDiagonalInCase14: []
+  spritesDiagonalInCase15: []
   similarTile:
   - River
   - Bridge
+  - SeaEntry
   terrainId: River
   terrainBonus: 0

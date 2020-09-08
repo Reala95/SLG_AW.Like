@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b457ff4b999452f4f916cf41eceec755, type: 3}
+  m_Name: SeaTile
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: -8687848408767067292, guid: b7e95f75c167c8a49988d50370a01e7c,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  spritesSheet:
+  - {fileID: -8687848408767067292, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -12929657411797467, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -8683413125370720314, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -2763574200730009635, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 1177554161696864288, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -3731671749778584804, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -7586322305785619359, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -7300279997295179433, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -4118604851567478426, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -1032676667822498643, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -3079255336987740780, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -7996816740057439523, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 5931529513484008060, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -165546203371270182, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -5001440752436637226, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 6698546397099829313, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  checkDiagonalTiles: 1
+  spritesDiagonalInCase5:
+  - {fileID: -3731671749778584804, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -3220752062917208703, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase6:
+  - {fileID: -7586322305785619359, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 4106108457504885080, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase7:
+  - {fileID: -7300279997295179433, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -8711551227256997127, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: -3534955231655315331, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: 8613675399393033141, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase9:
+  - {fileID: -1032676667822498643, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 8848694478032719658, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase10:
+  - {fileID: -3079255336987740780, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: -7692683063557872728, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase11:
+  - {fileID: -7996816740057439523, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 6422432860484644056, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: 50204902602515087, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: -8115378214663439713, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase13:
+  - {fileID: -165546203371270182, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 8008641725186649936, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: -2975698965055794690, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: 222097559589593114, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase14:
+  - {fileID: -5001440752436637226, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 2631645264313146434, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: -5209702676633656913, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  - {fileID: -27931669458413253, guid: 47944a2033552cd41b034c5a54299415, type: 3}
+  spritesDiagonalInCase15:
+  - {fileID: 6698546397099829313, guid: b7e95f75c167c8a49988d50370a01e7c, type: 3}
+  - {fileID: 2842935522089190026, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: -2207214466949744414, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: -6912739972633279804, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 7774482990868977337, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 1192420052167218069, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: -5694088899446603665, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 7306844108975225184, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: -6873800322835105833, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 5442635482376842502, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 4553920450530205229, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 164461697404547546, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 5389704825812723608, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 4161057975407439363, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: -1085428476107381493, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  - {fileID: 8494717650844155082, guid: 4fcdad5f3e2b1cb47b4718f79a613e48, type: 3}
+  similarTile:
+  - Sea
+  - Bridge
+  - SeaEntry
+  terrainId: Sea
+  terrainBonus: 0
