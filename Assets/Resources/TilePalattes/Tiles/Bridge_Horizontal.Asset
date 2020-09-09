@@ -50,5 +50,6 @@ MonoBehaviour:
   similarTile:
   - Bridge
   - Sea
+  - Road
   terrainId: Bridge
   terrainBonus: 0

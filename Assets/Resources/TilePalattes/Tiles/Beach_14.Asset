@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b457ff4b999452f4f916cf41eceec755, type: 3}
-  m_Name: Bridge_Vertical
+  m_Name: Beach_14
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -8137419239593598962, guid: 182a6d6409261134d8fa287ae4654188,
-    type: 3}
+  m_Sprite: {fileID: 400477102822753027, guid: 974da7b3c3db0d44d9890f46cab99933, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
@@ -36,7 +35,7 @@ MonoBehaviour:
   m_Flags: 1
   m_ColliderType: 1
   spritesSheet:
-  - {fileID: -8137419239593598962, guid: 182a6d6409261134d8fa287ae4654188, type: 3}
+  - {fileID: 400477102822753027, guid: 974da7b3c3db0d44d9890f46cab99933, type: 3}
   checkDiagonalTiles: 0
   spritesDiagonalInCase5: []
   spritesDiagonalInCase6: []
@@ -48,8 +47,7 @@ MonoBehaviour:
   spritesDiagonalInCase14: []
   spritesDiagonalInCase15: []
   similarTile:
-  - Bridge
+  - Beach
   - Sea
-  - Road
-  terrainId: Bridge
+  terrainId: Beach
   terrainBonus: 0

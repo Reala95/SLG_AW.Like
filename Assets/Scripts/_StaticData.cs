@@ -14,6 +14,7 @@ public class _StaticData
         "Bridge",
         "Sea",
         "SeaEntry",
+        "Beach",
         "Structure"
     };
     public static int plain = 0;
@@ -24,5 +25,6 @@ public class _StaticData
     public static int bridge = 5;
     public static int sea = 6;
     public static int seaEntry = 7;
-    public static int structure = 8;
+    public static int beach = 8;
+    public static int structure = 9;
 }

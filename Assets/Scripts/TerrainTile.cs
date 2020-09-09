@@ -57,7 +57,7 @@ public class TerrainTile : UnityEngine.Tilemaps.Tile
         if (tilemap.GetTile<TerrainTile>(position) != null)
             //return tilemap.GetTile<TerrainTile>(position).getTerrainId() == this.terrainId;
             return similarTile.Contains(tilemap.GetTile<TerrainTile>(position).getTerrainId());
-        else return false;
+        else return true;
     }
 
     private void secondTileChange(Vector3Int position, ITilemap tilemap, ref TileData tileData, int i)
